@@ -1,6 +1,0 @@
-docker run \
-  -v "/path/to/buildkite-agent.cfg:/buildkite/buildkite-agent.cfg:ro" \
-  -d \
-  -t \
-  --name buildkite-agent \
-  buildkite/agent:3 start --token "97aca2c77ce0bf4ec1b2145e519d82c3df88d6216b32501d33"
