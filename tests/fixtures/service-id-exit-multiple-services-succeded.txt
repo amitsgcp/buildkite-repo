@@ -1,2 +1,0 @@
-failed-other	456456	0
-working-other	789789	0
