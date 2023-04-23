@@ -10,7 +10,7 @@ BUILDKITE_PULL_REQUEST=${BUILDKITE_PULL_REQUEST:-"false"}
 BUILDKITE_TAG=${BUILDKITE_TAG:-"false"}
 
 # Evaluate policy
-opa eval --format=json --input=opa_input_file\buildkite_inputs.json --data=policies/buildkite_policy.rego | grep -q 'true'
+opa eval --format=json --input=opa_input_file/buildkite_inputs.json --data=policies/buildkite_policy.rego | grep -q 'true'
 if [ $? -ne 0 ]; then
   echo "Buildkite prebuild step failed policy check"
   exit 1
